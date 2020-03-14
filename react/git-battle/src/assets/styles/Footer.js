@@ -9,5 +9,6 @@ export const FooterStyle = styled.footer`
     bottom: 0;
     position: fixed;
     width: 100%;
+    font-size:20px;
     text-align: center;
 `;

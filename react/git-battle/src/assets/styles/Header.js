@@ -6,6 +6,6 @@ export const HeaderStyle = styled.header`
     align-items: center;
     width:100%;
     color:white;
-    height: 60px;
-    font-size:20px;
+    height: 90px;
+    font-size:40px;
 `;

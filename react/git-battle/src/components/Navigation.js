@@ -1,7 +1,23 @@
-import React from 'react';
-import {NavigationStyle} from '../assets/styles/Navigation'
+import React, { useState } from 'react';
+import { NavigationStyle } from '../assets/styles/Navigation';
 const Nav = (props) => {
-    return (<NavigationStyle><ul>
-        <li>Menu list 1</li><li>Menu list 2</li><li>Menu list 3</li><li>Menu list 4</li><li>Menu list 5</li><li>Menu item 6</li></ul></NavigationStyle>)
+    const [toggle, setToggle] = useState(false)
+    const listItems = props.elements.map((option) =>
+        <li>{option}</li>
+    );
+    if (!toggle) {
+        return (
+            <button onClick={() => setToggle(!toggle)}>
+                Show Menu
+            </button>
+        )
+    }
+    else {
+        return (<NavigationStyle><ul>{listItems}</ul>
+                    <button onClick={() => setToggle(!toggle)}>
+                        Hide Menu
+                    </button></NavigationStyle>)
+    }
+
 }
 export default Nav;
