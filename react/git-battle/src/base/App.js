@@ -1,15 +1,25 @@
 import React from 'react';
-import {Playground } from '../assets/styles/App';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Main from '../components/Main';
-import Nav from '../components/Navigation';
-const arr = ['Menu list 1','Menu list 2','Menu list 3','Menu list 4'];
+import SignIn from '../pages/SignIn';
+import SignUp from '../pages/SignUp';
+import MainContent from '../pages/Home';
 class App extends React.Component {
   
   render() {
-    return [<Playground />,<Header/>,<Nav elements={arr}/>,<Main/>,<Footer/>]
+    return <Router>
+      <Switch>
+        <Route exact path="/signin">
+          <SignIn/>
+        </Route>
+        <Route exact path="/signup">
+          <SignUp/>
+        </Route>
+        <Route exact path="/">
+          <MainContent/>
+        </Route>
+      </Switch>
+    </Router>
   }
 }
 

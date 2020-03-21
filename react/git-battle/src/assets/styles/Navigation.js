@@ -15,4 +15,8 @@ export const NavigationStyle = styled.nav`
     & li{
         padding:20px;
     }
+    & a{
+        padding:20px;
+        display:block;
+    }
 `;
