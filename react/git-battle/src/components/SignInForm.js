@@ -1,6 +1,5 @@
 import React from 'react';
 import {MainStyle} from '../assets/styles/Main'
-import Select from './Select'
 import Modal from './Modal';
 const SignInform = (props) => {
     const content = `GitHub, Inc. is a US-based global company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft, which acquired the company in 2018 for US$7.5 billion.[3] It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.[4]
