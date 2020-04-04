@@ -7,7 +7,6 @@ const MainContent = (props) => {
     const [hasError, setErrors] = useState(false);
     const [data, setData] = useState(null);
     const [toggle, setToggle] = useState(false);
-    const [counter, setCounter] = useState(0);
 
     async function fetchData() {
         const res = await fetch("https://jsonblob.com/api/jsonBlob/40718766-70f2-11ea-8c90-2169dd3bcb9b");
@@ -15,7 +14,6 @@ const MainContent = (props) => {
             .json()
             .then((res) => {
                 setData(res.results);
-                setCounter(counter + 1);
             })
             .catch(err => setErrors(err));
     }
@@ -36,6 +34,7 @@ const MainContent = (props) => {
         if (!toggle) {
             return (
                 <MainStyle>
+
                     {
                         data !== null ? data.slice(0, 5).map((element, index) => { return (<li key={index}>{element.name}</li>); }) : null
                     }
