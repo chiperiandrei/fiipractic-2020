@@ -1,5 +1,5 @@
 import React from 'react';
-import { WarningButtonStyle } from '../assets/styles/App';
+import { WarningButtonStyle } from '../../assets/styles/App';
 const WarningButton = (props) => {
     return (<WarningButtonStyle>Warning</WarningButtonStyle>)
 }

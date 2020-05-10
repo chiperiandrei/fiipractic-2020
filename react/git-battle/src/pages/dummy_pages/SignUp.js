@@ -1,14 +1,14 @@
 import React from 'react';
-import {Playground } from '../assets/styles/App';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import {Playground } from '../../assets/styles/App';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Nav from '../components/Navigation';
-import SignUpform from '../components/SignInForm';
+import SignUpform from '../components/SignUpform';
 const arr = [['/signin','Sign in'],['/signup','SIGN UP'],['/','Home'],['/counter','Counter']];
-const SignIn = (props) => {
+const SignUp = (props) => {
 
     return [<Playground />,<Header/>,<Nav elements={arr}/>,<SignUpform/>,<Footer/>]
     
 }
 
-export default SignIn;
+export default SignUp;

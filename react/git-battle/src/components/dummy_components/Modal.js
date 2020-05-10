@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainModal,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalClose} from '../assets/styles/Modal'
+import {MainModal,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalClose} from '../../assets/styles/Modal'
 const Modal = (props) => {
 
     const modal =  <MainModal>

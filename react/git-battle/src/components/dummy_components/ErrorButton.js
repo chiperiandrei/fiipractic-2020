@@ -1,5 +1,5 @@
 import React from 'react';
-import { ErrorButtonStyle } from '../assets/styles/App'
+import { ErrorButtonStyle } from '../../assets/styles/App'
 
 const ErrorButton = (props) => {
     return (<ErrorButtonStyle>Error</ErrorButtonStyle>)

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MainStyle } from '../assets/styles/Main'
+import { MainStyle } from '../../assets/styles/Main'
 
 
 

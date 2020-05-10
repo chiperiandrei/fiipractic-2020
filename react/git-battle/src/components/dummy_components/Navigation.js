@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavigationStyle, ButtonSwitch } from '../assets/styles/Navigation';
+import { NavigationStyle, ButtonSwitch } from '../../assets/styles/Navigation';
 import { Link } from 'react-router-dom';
 const Nav = (props) => {
     const [toggle, setToggle] = useState(false)
